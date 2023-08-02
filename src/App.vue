@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import PiniaIcon from './modules/shared/components/icons/PiniaIcon.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <PiniaIcon />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+      <h3>Pinia - Ejercicios</h3>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Counter Options</RouterLink>
+        <RouterLink to="/setup">Counter Setup</RouterLink>
       </nav>
     </div>
   </header>
