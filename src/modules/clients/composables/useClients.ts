@@ -19,8 +19,10 @@ export const useClients = () => {
     queryFn: () => getClients(currentPage.value)
   })
 
-  watch(data, (clients) => {
-    if (clients) store.setClients(clients)
+  watch(data, (clientsData) => {
+    if (!clientsData) return
+
+    store.setClients(clientsData)
   })
 
   return {
